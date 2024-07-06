@@ -34,8 +34,14 @@ const getVariance = (array) => {
     return variance;
 }
 
+const getStandardDeviation = (array) => {
+    const variance = getVariance(array);
+    const standardDeviation = Math.sqrt(variance);
+    return standardDeviation;
+}
+
 const calculate = () => {
-    const value = document.querySelector(".value").value;
+    const value = document.querySelector("#numbers").value;
     const array = value.split(/,\s*/g);
     const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
 
