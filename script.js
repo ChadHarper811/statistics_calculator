@@ -9,6 +9,9 @@ const getMedian = (array) => {
     return median;
 }
 
+const getMode = (array) => {
+    const counts = {};
+}
 
 const calculate = () => {
     const value = document.querySelector(".value").value;
